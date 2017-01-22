@@ -53,7 +53,7 @@ if (!empty($addtext)){
 
     echo "<form id='orderform' method='post' action='.'>   
 		
-        <input type='text' value='' size='100' name='addtext' onSubmit='document.orderform.reset()'>
+        <input type='text' value='' size='100' name='addtext' placeholder='Реактивізація, США, Бойовик, 2017, 158520, Д. Дж. Карузо' onSubmit='document.orderform.reset()'>
         <input type='submit' value='Додати' name='send'>
         </form>";
 
