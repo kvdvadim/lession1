@@ -54,7 +54,7 @@ if (!empty($addtext)){
     echo "<form id='orderform' method='post' action='.'>   
 		
         <input type='text' value='' size='100' name='addtext' onSubmit='document.orderform.reset()'>
-        <input type='submit' value='send' name='send'>
+        <input type='submit' value='Додати' name='send'>
         </form>";
 
     function sortByOrder($a, $b) {
@@ -118,8 +118,8 @@ if (!empty($addtext)){
         } 
      echo "</tbody></table>
     <form method='post' >
-        <input type='text' value='' name='word'>       
-        <input type='submit' value='send' name='send'>
+        <input type='text'  size='50' value='' name='word'>       
+        <input type='submit' value='Пошук' name='send'>
         </form>";
 
     //if (isset($_POST['send'])){
@@ -169,17 +169,20 @@ echo "<h3>Обчислити середній бюджет фільмів, що 
 		
     }   
         $_POST['country']=false;
-        }
-		 
 if (($summ)&&(count($my)>1)){
-    echo $summ/$count;
-    }
+	 echo "<tr>";
+    echo "<td>"."<b>Середнье значення бюджета</b> ".$summ/$count."</td>";
+	 echo "</tr>";
+    }	        
+		}
+		 
+
      echo "</tbody></table>  <form method='post' action='index.php'> <select name='country'>";
 	
 foreach ($duplicat as $duplicates){
     echo "<option value='$duplicates'>$duplicates</option>";    
 }
-echo "<input type='submit' value='send' name='send'></select></form>";
+echo "<input type='submit' value='Вибрати' name='send'></select></form>";
 
  
     ?>
@@ -188,19 +191,6 @@ echo "<input type='submit' value='send' name='send'></select></form>";
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         </head>
         <body>
-            <style>
-                table1,td1{
-                    border: 1px solid black;
-                    border-collapse: collapse;
-                }
-
-
-            </style>      
-
-        <form method='post' action='index.php'>   
-        <input type='text' value='' name='country1'>
-      
-            <input type='submit' value='send' name='send1'>
-        </form>
+           
         </body>
     </html>
