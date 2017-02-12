@@ -1,5 +1,5 @@
 <?php
-	$mysqli=new mysqli("localhost","root","","task2"); 
+	$mysqli=new mysqli("localhost","root","","task22"); 
 	if ($mysqli->connect_errno) {
 		printf("Не вдалось підєднатись: %s\n", $mysqli->connect_error);
 		exit();
